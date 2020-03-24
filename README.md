@@ -44,6 +44,22 @@ hourRotation(12); // returns 0
 hourRotation(5); // returns (5 / 12) * 360
 ```
 
+## HINT!
+
+Make sure to use the `setInterval` function to make a ticking function!
+
+```
+setInterval(function(){
+    console.log("TICK!");
+ }, 1000);
+```
+
+The first argument is a callback function - it gets triggered every 1000 milliseconds (1 second), which is the second argument.
+
+```
+setInterval(functionYouWantToRun, millisecondsDelay);
+```
+
 ## Bonus: Show Actual Time
 Use JavaScripts `Date` objects to display the actual
 time.
@@ -52,8 +68,12 @@ time.
 var now = new Date();
 ```
 
-Get `now` by declaring a new Date object. Investigate
-what useful functions the Date object has attached to it.
+Get `now` by declaring a new Date object. You can google for "MDN date methods" to see what
+helpful methods are attached to Date objects. There's helpful things like `.getMonth()`, `.getSeconds()`
+and who knows what else!
+
+See the full list of methods in the left sidebar on this site:
+https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Date
 
 ## Licensing
 All content is licensed under a CC­BY­NC­SA 4.0 license.
